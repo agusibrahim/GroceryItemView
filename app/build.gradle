@@ -20,5 +20,7 @@ android {
 }
 
 dependencies {
+	compile 'com.android.support:cardview-v7:+'
+	compile 'com.jakewharton.scalpel:scalpel:1.1.2'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#EE4054</color>
+	<color name="colorPrimaryDark">#D6374A</color>
+	<color name="windowBackground">#ECF0F1</color>
+	<color name="btn_beli_pressed">#F4D8E2</color>
+	<color name="btn_body_pressed">#0A000000</color>
+</resources>

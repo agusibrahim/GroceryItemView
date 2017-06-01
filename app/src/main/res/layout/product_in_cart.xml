@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingTop="10dp"
+	android:background="#ffffff">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:id="@+id/pruductincartLinearLayout1"
+		android:layout_marginLeft="5dp">
+
+		<ImageButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/ic_chevron_up"
+			android:id="@+id/cart_up"
+			android:background="?android:attr/selectableItemBackground"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="0"
+			android:gravity="center"
+			android:id="@+id/cart_val"
+			android:textColor="@color/colorPrimary"
+			android:textStyle="bold"/>
+
+		<ImageButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/ic_chevron_down"
+			android:id="@+id/cart_down"
+			android:background="?android:attr/selectableItemBackground"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="5dp"
+		android:background="@drawable/dashed"
+		android:layerType="software"
+		android:layout_below="@id/pruductincartLinearLayout1"
+		android:layout_marginTop="10dp"
+		android:id="@+id/pruductincartView1"/>
+
+	<ImageView
+		android:layout_height="match_parent"
+		android:layout_width="100dp"
+		android:layout_above="@id/pruductincartView1"
+		android:layout_toRightOf="@id/pruductincartLinearLayout1"
+		android:id="@+id/cart_image"
+		android:background="#FFFFFF"
+		android:scaleType="fitXY"
+		android:layout_alignParentTop="true"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_toRightOf="@id/cart_image"
+		android:layout_marginLeft="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Mi Mantap"
+			android:maxLines="2"
+			android:textStyle="bold"
+			android:id="@+id/cart_title"
+			android:minLines="2"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="30g • Rp35.000"
+			android:id="@+id/cart_subtitle"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="Rp123.000"
+		android:layout_above="@id/pruductincartView1"
+		android:layout_alignParentRight="true"
+		android:textStyle="bold"
+		android:textColor="#19C710"
+		android:id="@+id/cart_price"
+		android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
+

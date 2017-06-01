@@ -1,11 +1,30 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<com.jakewharton.scalpel.ScalpelFrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:id="@+id/scapel">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/windowBackground"
+		android:gravity="center"
+		android:paddingTop="0dp"
+		android:orientation="vertical">
 
-</LinearLayout>
+		<include
+			layout="@layout/produk"/>
+
+		<View
+			android:layout_height="20dp"
+			android:layout_width="1dp"/>
+
+		<include
+			layout="@layout/product_in_cart"
+			android:id="@+id/cart_view"/>
+
+	</LinearLayout>
+
+</com.jakewharton.scalpel.ScalpelFrameLayout>
+

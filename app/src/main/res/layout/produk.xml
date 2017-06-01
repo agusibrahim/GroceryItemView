@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	card_view:cardCornerRadius="3dp"
+	card_view:cardElevation="0dp"
+	android:id="@+id/produkCardView">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="@drawable/trans_product_selectable"
+		android:id="@+id/product_selectable">
+		<FrameLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0"
+			android:layout_marginRight="2dp"
+			android:layout_marginLeft="2dp"
+			android:layout_marginTop="2dp"
+		>
+		<ImageView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/product_image"
+			android:scaleType="fitXY"
+			android:background="#E9E9E9"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="DISKON 10%"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:padding="5dp"
+				android:layout_margin="10dp"
+				android:background="@drawable/bg_diskon"
+				android:textSize="12sp"
+				android:id="@+id/product_diskon"
+				android:alpha="0.9"/>
+		</FrameLayout>
+
+		<RelativeLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:background="#FFFFFF"
+			android:layout_marginLeft="2dp"
+			android:layout_marginRight="2dp"
+			android:layout_weight="1.0">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Sayuran segar berkualitas"
+				android:id="@+id/product_nama"
+				android:typeface="normal"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"
+				android:maxLines="2"
+				android:minLines="2"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="30g"
+				android:layout_below="@id/product_nama"
+				android:layout_marginLeft="10dp"
+				android:id="@+id/product_satuan"
+				android:typeface="monospace"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Rp12.500"
+				android:layout_alignParentBottom="true"
+				android:id="@+id/product_harga"
+				android:textColor="#38C512"
+				android:layout_marginBottom="3dp"
+				android:layout_marginLeft="10dp"
+				android:textStyle="bold"
+				android:typeface="monospace"/>
+
+		</RelativeLayout>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="@color/windowBackground"
+			android:layout_marginRight="2dp"
+			android:layout_marginLeft="2dp"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:layout_height="46dp"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:background="@android:color/transparent"
+				android:id="@+id/product_quantity_view"
+				android:visibility="gone">
+
+				
+
+					<ImageButton
+						style="?android:attr/borderlessButtonStyle"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:scaleType="centerInside"
+						android:adjustViewBounds="true"
+						android:textColor="#FCFAFB"
+						android:layout_alignParentLeft="true"
+						android:id="@+id/product_quantity_min"
+						android:src="@drawable/ic_minus"/>
+
+					
+
+				
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="0"
+					android:gravity="center"
+					android:textStyle="bold"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:textColor="#FFFFFF"
+					android:layout_centerHorizontal="true"
+					android:id="@+id/product_quantity_value"
+					android:layout_marginRight="10dp"
+					android:layout_marginLeft="10dp"
+					android:typeface="monospace"
+					android:layout_centerVertical="true"/>
+
+				<ImageButton
+					style="?android:attr/borderlessButtonStyle"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:scaleType="centerInside"
+					android:adjustViewBounds="true"
+					android:textColor="#FEFEFE"
+					android:layout_alignParentRight="true"
+					android:id="@+id/product_quantity_plus"
+					android:src="@drawable/ic_plus"/>
+
+			</RelativeLayout>
+
+			<Button
+				android:layout_height="46dp"
+				android:layout_width="match_parent"
+				android:text="BELI"
+				android:textColor="@color/colorPrimary"
+				android:background="@drawable/btn_beli"
+				android:id="@+id/product_beli"
+				android:visibility="visible"
+				android:textStyle="bold"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:background="@drawable/btn_productbody"
+		android:layout_marginBottom="48dp"
+		android:id="@+id/product_body"/>
+
+</android.support.v7.widget.CardView>
+
