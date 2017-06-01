@@ -53,13 +53,9 @@ Berikut animasi tambahan yang saya terapkan pada nilai quantity saat tombol (+) 
 Ripple Effect memberi feedback sentuhan yang keren, namun Ripple hanya berlaku di API 21 (lolipop) keatas. 
 Berikut adalah perbedaan jika kita menerapkan Ripple Effect dan jika tidak menggunakannya.
 
-<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple1.gif" width="150">
-
-> Tanpa Ripple
-
-<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple2.gif" width="150">
-
-> Dengan Ripple
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple1.gif" width="150"> | <img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple2.gif" width="150">
+------------ | -------------
+Tanpa Ripple | Dengan Ripple
 
 Buat drawable ripple di folder  **drawable-21** 
 ```xml
