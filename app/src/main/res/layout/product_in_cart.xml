@@ -74,7 +74,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:textAppearance="?android:attr/textAppearanceSmall"
-			android:text="Mi Mantap"
+			android:text="Sayuran segar berkualitas"
 			android:maxLines="2"
 			android:textStyle="bold"
 			android:id="@+id/cart_title"

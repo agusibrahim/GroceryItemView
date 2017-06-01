@@ -11,7 +11,6 @@ import android.view.ViewGroup.*;
 import android.util.*;
 import android.graphics.drawable.TransitionDrawable;
 import android.view.animation.*;
-import com.jakewharton.scalpel.ScalpelFrameLayout;
 
 public class MainActivity extends Activity implements View.OnClickListener
 {
@@ -22,15 +21,14 @@ public class MainActivity extends Activity implements View.OnClickListener
 	ImageButton btn_up, btn_down, cart_up, cart_down;
 	int curvalue=0;
 	int harga=4500;
+	int transduration=200;
 	private TransitionDrawable prod_selectable;
 	private View cart_view;
-	ScalpelFrameLayout scalpelView;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-		scalpelView=(ScalpelFrameLayout) findViewById(R.id.scapel);
 		prod_card=findViewById(R.id.produkCardView);
 		btn_beli=(Button) findViewById(R.id.product_beli);
 		prod_harga=(TextView) findViewById(R.id.product_harga);
@@ -68,7 +66,6 @@ public class MainActivity extends Activity implements View.OnClickListener
 		cart_up.setOnClickListener(this);
 		cart_down.setOnClickListener(this);
 		
-		//scalpelView.setLayerInteractionEnabled(true);
     }
 	
 	@Override
@@ -76,13 +73,13 @@ public class MainActivity extends Activity implements View.OnClickListener
 		if(p1==cart_down||p1==btn_down){
 			if(curvalue<1) return;
 			curvalue--;
-			animateIt(prod_quantity, true, false);
+			//animateIt(prod_quantity, true, false);
 		}else if(p1==cart_up||p1==btn_up){
 			curvalue++;
-			animateIt(prod_quantity, false, false);
+			//animateIt(prod_quantity, false, false);
 		}else if(p1==btn_beli){
 			curvalue=1;
-			animateIt(prod_quantity, false, false);
+			//animateIt(prod_quantity, false, false);
 		}
 		updateSelection();
 	}
@@ -93,15 +90,20 @@ public class MainActivity extends Activity implements View.OnClickListener
 		cart_value.setText(""+curvalue);
 		cart_price.setText(priceFormater(harga*curvalue));
 		if(curvalue==1&&btn_beli.getVisibility()==View.VISIBLE){
-			prod_selectable.startTransition(300);
+			prod_selectable.startTransition(transduration);
+			cart_view.setVisibility(View.VISIBLE);
 			quantity_view.setVisibility(View.VISIBLE);
 			btn_beli.setVisibility(View.GONE);
-			cart_view.setVisibility(View.VISIBLE);
 		}else if(curvalue<1){
-			prod_selectable.resetTransition();
-			btn_beli.setVisibility(View.VISIBLE);
-			quantity_view.setVisibility(View.GONE);
+			prod_selectable.reverseTransition(transduration);
 			cart_view.setVisibility(View.GONE);
+			new Handler().postDelayed(new Runnable(){
+					@Override
+					public void run() {
+						quantity_view.setVisibility(View.GONE);
+						btn_beli.setVisibility(View.VISIBLE);
+					}
+				}, transduration);
 		}
 	}
 	private void animateIt(View v, boolean reverse, boolean fade){
