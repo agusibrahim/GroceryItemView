@@ -50,6 +50,7 @@ Ripple Effect memberi feedback sentuhan yang keren, namun Ripple hanya berlaku d
 Berikut adalah perbedaan jika kita menerapkan Ripple Effect dan jika tidak menggunakannya.
 
 <img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple1.gif" width="150">
+
 > Tanpa Ripple
 
 <img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple2.gif" width="150">
