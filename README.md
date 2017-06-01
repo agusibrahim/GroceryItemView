@@ -86,6 +86,8 @@ Dan untuk Cart List saya menggunakan NavigationDrawer disebelah kanan
 
 <img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/Screenshot_20170601-144340.png" width="250">
 
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/result.gif" width="300">
+
 Mau mencoba? [klik disini](https://appetize.io/app/0xvqk7f4bfx5c8tpyyjcfgy2um?device=nexus5&scale=75&orientation=portrait&osVersion=7.0)
  untuk mencoba via Appetize
 
