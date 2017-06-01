@@ -1,6 +1,6 @@
 Terinspirasi dari Aplikasi Supermarket Online asal Singapura,  [RedMart](http://redmart.com). Grocery Item View milik redmart ini sangat menarik, berupa tiles kecil yang terdapat tombol "ADD TO CART" dibagian bawah dimana saat ditekan akan berubah menjadi tombol plus dan minus yaitu untuk mengatur berapa jumlah yang akan dibeli.
 
-![image](https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/IMG_20170601_124428.jpg)
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/IMG_20170601_124428.jpg" width="400">
 > RedMart product tiles
 
 Dengan demikian pengguna tidak perlu masuk ke item detail atau ke cart list hanya untuk mengatur jumlah yang akan dibeli, dimana cara ini banyak dilakukan aplikasi serupa yang lain.
@@ -18,7 +18,7 @@ Quantity view di set GONE terlebih dahulu karena yang akan tampil di awal adalah
 Jika nilai quantity lebih kecil dari 1 maka di set seperti awal, tombol "BELI" set VISIBLE dan quantity view set GONE serta background kembali ke putih.
 
 ## Animasi
-![image](https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/tile.gif)
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/tile.gif" width="150">
 > RedMart product tiles animation
 
 Pemberian animasi perlu dilakukan agar aplikasi tidak terasa kaku, juga sebagai touch feedback yaitu umpan balik setelah pengguna mengklik.
@@ -37,22 +37,22 @@ Diatas ada 2 layer transisi, yaitu yang pertama berupa warna putih, kedua warna 
 
 Panggil  `startTransition(diration)` untuk memulai transisi dan  `reverseTransition(duration)` untuk membalik transisi.
 
-![image](https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/tile1.gif)
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/tile1.gif" width="150">
 > My Own tiles animation
 
 Berikut animasi tambahan yang saya terapkan pada nilai quantity saat tombol (+) dan (-) diklik.
 
-![image](https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/tile2.gif)
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/tile2.gif" width="150">
 > My Own tiles with extra animation
 
 ## Efek Ripple
 Ripple Effect memberi feedback sentuhan yang keren, namun Ripple hanya berlaku di API 21 (lolipop) keatas. 
 Berikut adalah perbedaan jika kita menerapkan Ripple Effect dan jika tidak menggunakannya.
 
-![image](https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple1.gif)
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple1.gif" width="150">
 > Tanpa Ripple
 
-![image](https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple2.gif)
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple2.gif" width="150">
 > Dengan Ripple
 
 Buat drawable ripple di folder  **drawable-21** 
@@ -73,16 +73,16 @@ Terapkan drawable diatas ke Button atau Touchable view yang lain, maka akan ada 
 
 Disini saya sertakan juga item untuk di cart-nya yang menampilkan nama produk, berat dan harga serta total harga yang dihitung dengan cara mengkalikan harga produk dan jumlah yang dibeli.
 
-![image](https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/IMG_20170601_151307.jpg)
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/IMG_20170601_151307.jpg" width="400">
 
 ## Masukan ke RecyclerView
 Buat RecyclerView dengan GridLayoutManagar sehingga akan terlihat seperti ini
 
-![image](https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/Screenshot_20170601-144103.png)
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/Screenshot_20170601-144103.png" width="250">
 
 Dan untuk Cart List saya menggunakan NavigationDrawer disebelah kanan
 
-![image](https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/Screenshot_20170601-144340.png)
+<img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/Screenshot_20170601-144340.png" width="250">
 
 Mau mencoba? [klik disini](https://appetize.io/app/0xvqk7f4bfx5c8tpyyjcfgy2um?device=nexus5&scale=75&orientation=portrait&osVersion=7.0)
  untuk mencoba via Appetize
