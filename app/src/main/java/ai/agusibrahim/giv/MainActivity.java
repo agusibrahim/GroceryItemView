@@ -1,5 +1,8 @@
 package ai.agusibrahim.giv;
-
+/*
+Agus Ibrahim
+http://fb.me/mynameisagoes
+*/
 import android.app.*;
 import android.os.*;
 import android.widget.*;
@@ -73,12 +76,15 @@ public class MainActivity extends Activity implements View.OnClickListener
 		if(p1==cart_down||p1==btn_down){
 			if(curvalue<1) return;
 			curvalue--;
+			// uncomment to enable extra animation
 			//animateIt(prod_quantity, true, false);
 		}else if(p1==cart_up||p1==btn_up){
 			curvalue++;
+			// uncomment to enable extra animation
 			//animateIt(prod_quantity, false, false);
 		}else if(p1==btn_beli){
 			curvalue=1;
+			// uncomment to enable extra animation
 			//animateIt(prod_quantity, false, false);
 		}
 		updateSelection();
