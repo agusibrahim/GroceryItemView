@@ -1,6 +1,7 @@
 Terinspirasi dari Aplikasi Supermarket Online asal Singapura,  [RedMart](http://redmart.com). Grocery Item View milik redmart ini sangat menarik, berupa tiles kecil yang terdapat tombol "ADD TO CART" dibagian bawah dimana saat ditekan akan berubah menjadi tombol plus dan minus yaitu untuk mengatur berapa jumlah yang akan dibeli.
 
 <img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/IMG_20170601_124428.jpg" width="400">
+
 > RedMart product tiles
 
 Dengan demikian pengguna tidak perlu masuk ke item detail atau ke cart list hanya untuk mengatur jumlah yang akan dibeli, dimana cara ini banyak dilakukan aplikasi serupa yang lain.
@@ -19,6 +20,7 @@ Jika nilai quantity lebih kecil dari 1 maka di set seperti awal, tombol "BELI" s
 
 ## Animasi
 <img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/tile.gif" width="150">
+
 > RedMart product tiles animation
 
 Pemberian animasi perlu dilakukan agar aplikasi tidak terasa kaku, juga sebagai touch feedback yaitu umpan balik setelah pengguna mengklik.
@@ -38,11 +40,13 @@ Diatas ada 2 layer transisi, yaitu yang pertama berupa warna putih, kedua warna 
 Panggil  `startTransition(diration)` untuk memulai transisi dan  `reverseTransition(duration)` untuk membalik transisi.
 
 <img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/tile1.gif" width="150">
+
 > My Own tiles animation
 
 Berikut animasi tambahan yang saya terapkan pada nilai quantity saat tombol (+) dan (-) diklik.
 
 <img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/tile2.gif" width="150">
+
 > My Own tiles with extra animation
 
 ## Efek Ripple
@@ -54,6 +58,7 @@ Berikut adalah perbedaan jika kita menerapkan Ripple Effect dan jika tidak mengg
 > Tanpa Ripple
 
 <img src="https://raw.githubusercontent.com/agusibrahim/GroceryItemView/publish/img/ripple2.gif" width="150">
+
 > Dengan Ripple
 
 Buat drawable ripple di folder  **drawable-21** 
